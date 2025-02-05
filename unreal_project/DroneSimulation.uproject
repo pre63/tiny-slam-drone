@@ -1,0 +1,13 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "4.27",
+  "Category": "",
+  "Description": "Drone simulation project hosting a drone vehicle and cityscape.",
+  "Modules": [
+    {
+      "Name": "DroneSimulation",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

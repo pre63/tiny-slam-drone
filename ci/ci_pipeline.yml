@@ -1,0 +1,22 @@
+name: CI Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Rust Toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+      - name: Build Simulator Module
+        run: make -C simulator build
+      - name: Build Controller Module
+        run: make -C controller build
+      - name: Run Tests
+        run: |
+          make -C simulator test
+          make -C controller test

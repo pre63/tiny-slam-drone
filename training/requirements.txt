@@ -1,0 +1,7 @@
+jax
+jaxlib
+brax
+flax
+numpy
+matplotlib
+requests

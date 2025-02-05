@@ -1,0 +1,17 @@
+[package]
+name = "drone_controller"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+embedded-hal = "0.2"
+nrf52840-hal = "0.15"
+esp-idf-sys = "0.30"
+rtic = "0.5"
+nalgebra = "0.31"
+ekf-rs = "0.1.0"
+opencv = { version = "0.68", features = ["contrib"] }
+log = "0.4"
+env_logger = "0.9"
+pid = "1.0"
+chrono = "0.4"
